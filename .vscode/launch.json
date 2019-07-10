@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - main",
+            "request": "launch",
+            "mainClass": "Sort.main",
+            "projectName": "PCTest_d90f5503"
+        }
+    ]
+}

@@ -1,11 +1,13 @@
-import java.lang.Math;
-import java.util.Arrays;
-import java.util.Scanner;
 import java.io.IOException;
+import java.util.Scanner;
 
 class main{
     
     public static void main(String [] args){
+        display();
+    }
+
+    public static void display() {
         int lenghtArr = 10000;
         int[] sortArray = new int[lenghtArr];
         int mainMenu = 0;
@@ -16,9 +18,6 @@ class main{
         Scanner setting = new Scanner(System.in);
         Scanner lenghtArrChange = new Scanner(System.in);
         Scanner minMaxChange = new Scanner(System.in);
-        Scanner settingPodMenu = new Scanner(System.in);
-
-
         for (; ;)
         {
             System.out.print("\n1 - BubleSort \n2 - QuickSort \n9 - Setting \n0 - Exit \n\n");
@@ -31,7 +30,7 @@ class main{
                 sortArray = bublSort(arrCreate(lenghtArr, arrMin, arrMax));
                 System.out.println("Total time: " + (System.nanoTime() - startTime)*Math.pow(10,-9) + " in seconds");
                 System.out.println("Arrays size: " + lenghtArr);
-                System.out.println("Sorted array: "+ Arrays.toString(sortArray));
+                //System.out.println("Sorted array: "+ Arrays.toString(sortArray));
             }
             if (mainMenu == 2)
             {
@@ -41,7 +40,7 @@ class main{
                 sortArray = quickSort(arrCreate(lenghtArr, arrMin, arrMax), 0, lenghtArr - 1);
                 System.out.println("Total time: " + (System.nanoTime() - startTime)*Math.pow(10,-9) + " in seconds");
                 System.out.println("Arrays size: " + lenghtArr);
-                System.out.println("Sorted array: "+ Arrays.toString(sortArray));
+                //System.out.println("Sorted array: "+ Arrays.toString(sortArray));
             }
             if (mainMenu == 9)
             {
