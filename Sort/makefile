@@ -1,3 +1,8 @@
 all:
-	javac main.java
-	java main
+	cd ./src && \
+	javac Main.java && \
+	java Main
+
+
+
+	

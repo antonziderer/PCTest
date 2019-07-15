@@ -1,9 +1,11 @@
+package sort.src;
 import java.io.IOException;
 import java.util.Scanner;
+import java.util.Arrays;
 
-class main{
+class Main{
     
-    public static void main(String [] args){
+    public static void mainSort(String [] args){
         display();
     }
 
@@ -30,7 +32,7 @@ class main{
                 sortArray = bublSort(arrCreate(lenghtArr, arrMin, arrMax));
                 System.out.println("Total time: " + (System.nanoTime() - startTime)*Math.pow(10,-9) + " in seconds");
                 System.out.println("Arrays size: " + lenghtArr);
-                //System.out.println("Sorted array: "+ Arrays.toString(sortArray));
+                System.out.println("Sorted array: "+ Arrays.toString(sortArray));
             }
             if (mainMenu == 2)
             {
@@ -40,7 +42,7 @@ class main{
                 sortArray = quickSort(arrCreate(lenghtArr, arrMin, arrMax), 0, lenghtArr - 1);
                 System.out.println("Total time: " + (System.nanoTime() - startTime)*Math.pow(10,-9) + " in seconds");
                 System.out.println("Arrays size: " + lenghtArr);
-                //System.out.println("Sorted array: "+ Arrays.toString(sortArray));
+                System.out.println("Sorted array: "+ Arrays.toString(sortArray));
             }
             if (mainMenu == 9)
             {
